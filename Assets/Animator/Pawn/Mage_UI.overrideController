@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mage_UI
+  m_Controller: {fileID: 9100000, guid: a14571826c6984742a766b77a05271e2, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: faed7295f2885944d952c0421625785d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0145cb58fb82eba459366700bc34958f, type: 2}
