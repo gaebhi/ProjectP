@@ -16,6 +16,8 @@
 
 ![scene](https://blogfiles.pstatic.net/MjAyMDA1MDJfNzIg/MDAxNTg4MzQ4MzczMzk3.MKn6P6A17pfqlZFV-rQssT16xlYRp1NGwfoCeaabNMkg.-WZApxhdLRTQ0wYx5HJDJQg669XiCyUWxSN4_bpmdK4g.GIF.gaebhi/3opti.gif?type=w1 "phase03")
 
+## 3. 영상
+![scene](https://blogfiles.pstatic.net/MjAyMDA1MDJfMjU3/MDAxNTg4MzQ3MTc0OTgx.uXh0i7onBKZu7lF7XUGcU-9IeG44sMawiHIr1yEYUmgg.KWN6qHYimij-ckrZ2osSF-mbz3dAFfRMsDqXD0p3rN8g.PNG.gaebhi/class.png?type=w1 "flow")
 
-## 3. 게임 흐름
+## 4. 게임 흐름
 ![scene](https://blogfiles.pstatic.net/MjAyMDA1MDJfMjU3/MDAxNTg4MzQ3MTc0OTgx.uXh0i7onBKZu7lF7XUGcU-9IeG44sMawiHIr1yEYUmgg.KWN6qHYimij-ckrZ2osSF-mbz3dAFfRMsDqXD0p3rN8g.PNG.gaebhi/class.png?type=w1 "flow")
