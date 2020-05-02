@@ -20,4 +20,4 @@
 * [Video link](https://youtu.be/VVude-s0rCo "link")
 
 ## 4. 게임 흐름
-![scene](https://blogfiles.pstatic.net/MjAyMDA1MDJfMjU3/MDAxNTg4MzQ3MTc0OTgx.uXh0i7onBKZu7lF7XUGcU-9IeG44sMawiHIr1yEYUmgg.KWN6qHYimij-ckrZ2osSF-mbz3dAFfRMsDqXD0p3rN8g.PNG.gaebhi/class.png?type=w1 "flow")
+![scene](https://blogfiles.pstatic.net/MjAyMDA1MDJfMTY3/MDAxNTg4Mzg1MDI4MTEx.rJfQheKg9UUdLzA9RF8mJ6CZomA9DNIijbOp_UC_rzkg.vDc3bMF_IaUvwlaDSVOW5pHxhykHOo4p1E12Sp0s2tQg.PNG.gaebhi/flow.png?type=w1 "flow")
