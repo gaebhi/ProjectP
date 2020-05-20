@@ -6,9 +6,9 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Pawn : MonoBehaviour
 {
-    protected const float ACCELERATION = 12f;
+    protected const float ACCELERATION = 20f;
     protected const float JUMP_POWER = 6f;
-    protected const float MAX_SPEED = 6f;
+    protected const float MAX_SPEED = 5f;
     protected const float MIN_FLIP_SPEED = 0.1f;
 
     protected LayerMask GroundMask;

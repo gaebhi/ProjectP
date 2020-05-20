@@ -22,12 +22,12 @@ public class Psychic : MonoBehaviour
 
     private void updateHp(float _hp)
     {
-        if (_hp <= 0)
-        {
-            m_animator.SetTrigger(ConstValue.TRIGGER_DEATH);
-            m_rigidbody.gravityScale = 0f;
-            m_collider.enabled = false;
-        }
+        //if (_hp <= 0)
+        //{
+        //    m_animator.SetTrigger(ConstValue.TRIGGER_DEATH);
+        //    m_rigidbody.gravityScale = 0f;
+        //    m_collider.enabled = false;
+        //}
 
         if (m_health.Hp < 50)
         {

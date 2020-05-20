@@ -31,6 +31,8 @@ public class ConstValue
     public const string TRIGGER_SKILL2 = "Skill2";
     public const string TRIGGER_SKILL3 = "Skill3";
 
+    public const string TRIGGER_DASH = "Dash";
+
     public const string RES_DEFAUT_BULLET = "Default";
     public const string RES_EYE_BULLET = "EyeBullet";
     public const string RES_MAGE_BULLET = "MageBullet";

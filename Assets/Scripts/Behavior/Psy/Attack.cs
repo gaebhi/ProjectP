@@ -19,8 +19,6 @@ public class Attack : Action
     
     public override void OnStart()
     {
-
-
         sqrMagnitude = Range.Value * Range.Value;
 
         if (m_target != null)
