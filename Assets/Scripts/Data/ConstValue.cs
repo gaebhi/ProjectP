@@ -6,12 +6,17 @@ public class ConstValue
 {
     public static readonly Vector3 FLIP_SCALE = new Vector3(-1, 1, 1);
 
+    public const string LAYER_PLAYER = "Player";
+    public const string LAYER_ENEMY = "Enemy";
+
     public const string TAG_PLAYER = "Player";
 
     public const string PATH_PROJECTILE = "Projectiles/";
 
     public const string TRIGGER_IDLE = "Idle";
-    
+
+    public const string TRIGGER_RUN = "Run";
+
     public const string TRIGGER_ATTACK = "Attack";
     public const string TRIGGER_JUMP = "Jump";
 

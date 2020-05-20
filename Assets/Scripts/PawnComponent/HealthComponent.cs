@@ -41,7 +41,7 @@ public class HealthComponent : MonoBehaviour
     }
 
     public void TakeDamage(float _value)
-    {
+    { 
         if (m_bDead || m_bCoolTime)
             return;
 

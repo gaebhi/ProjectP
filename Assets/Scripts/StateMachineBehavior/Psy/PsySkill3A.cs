@@ -13,7 +13,7 @@ public class PsySkill3A: StateMachineBehaviour
     private Vector2 m_targetPosition;
     private float m_direction;
 
-    private PsyAttackComponent m_attack = null;
+    private PsyBehaviorComponent m_attack = null;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -31,7 +31,7 @@ public class PsySkill3A: StateMachineBehaviour
             m_direction = -1f;
         }
 
-        m_attack = animator.GetComponent<PsyAttackComponent>();
+        m_attack = animator.GetComponent<PsyBehaviorComponent>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

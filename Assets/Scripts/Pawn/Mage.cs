@@ -11,6 +11,7 @@ public class Mage : Pawn
 
     private void Start()
     {
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer(ConstValue.LAYER_PLAYER), LayerMask.NameToLayer(ConstValue.LAYER_ENEMY), true);
         m_attack = GetComponent<AttackComponent>();
         m_dash = GetComponent<DashComponent>();
         m_chaser = GetComponent<ChaserComponent>();

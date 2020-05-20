@@ -10,12 +10,12 @@ public class PsyRun : StateMachineBehaviour
     private Transform m_playerTransform;
     private Vector2 m_targetPosition;
 
-    private PsyAttackComponent m_attack = null;
+    private PsyBehaviorComponent m_attack = null;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         m_playerTransform = GameObject.FindGameObjectWithTag(ConstValue.TAG_PLAYER).transform;
-        m_attack = animator.GetComponent<PsyAttackComponent>();
+        m_attack = animator.GetComponent<PsyBehaviorComponent>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -39,7 +39,6 @@ public class PsyRun : StateMachineBehaviour
         {
             if (m_playerTransform.GetComponent<HealthComponent>().Hp <= 0)
                 return;
-            animator.SetTrigger(ConstValue.TRIGGER_ATTACK);
             m_attack.Attack();
         }
     }
