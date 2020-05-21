@@ -67,10 +67,6 @@ public class Attack : Action
         return TaskStatus.Running;
     }
 
-    public override void OnEnd()
-    {
-        base.OnBehaviorComplete();
-    }
     public override void OnReset()
     {
         TargetTag = string.Empty;

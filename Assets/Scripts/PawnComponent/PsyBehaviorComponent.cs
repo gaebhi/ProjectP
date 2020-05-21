@@ -21,12 +21,14 @@ public class PsyBehaviorComponent : MonoBehaviour
 
     public void Idle()
     {
-        m_animator.SetTrigger(ConstValue.TRIGGER_IDLE);
+        if(m_animator != null)
+            m_animator.SetTrigger(ConstValue.TRIGGER_IDLE);
     }
 
     public void Run()
     {
-        m_animator.SetTrigger(ConstValue.TRIGGER_RUN);
+        if (m_animator != null)
+            m_animator.SetTrigger(ConstValue.TRIGGER_RUN);
     }
 
     /// <summary>
@@ -34,7 +36,8 @@ public class PsyBehaviorComponent : MonoBehaviour
     /// </summary>
     public void Attack()
     {
-        m_animator.SetTrigger(ConstValue.TRIGGER_ATTACK);
+        if (m_animator != null)
+            m_animator.SetTrigger(ConstValue.TRIGGER_ATTACK);
     }
 
     public void AttackEvent(AnimationEvent _event)
@@ -49,14 +52,24 @@ public class PsyBehaviorComponent : MonoBehaviour
                 collider.GetComponent<HealthComponent>().TakeDamage(m_normalDamage);
         }
     }
+
     /// <summary>
     /// 회전 공격
     /// </summary>
-    public void Skill03()
+    public void Revolve()
+    {
+        if (m_animator != null)
+            m_animator.SetTrigger(ConstValue.TRIGGER_SKILL3);
+    }
+
+    /// <summary>
+    /// 회전 공격 판정
+    /// </summary>
+    public void RevolveAttack()
     {
         Vector3 attackPosition = transform.position;
         
-        Collider2D collider = Physics2D.OverlapCircle(attackPosition, m_attacklRange);
+        Collider2D collider = Physics2D.OverlapCircle(attackPosition, m_attacklRange, AttackMask);
 
         if (collider != null)
         {
@@ -69,9 +82,23 @@ public class PsyBehaviorComponent : MonoBehaviour
     /// <summary>
     /// 발사체 공격
     /// </summary>
-    public void EyeAttack()
+    public void EyeSkill(Transform _target)
     {
+        if(m_animator != null)
+            m_animator.SetTrigger(ConstValue.TRIGGER_SKILL2);
 
+        Projectile projectile = ProjectileObjectPool.Instance.Pop(EProjectile.EYE_BULLET);
+
+        if (transform.position.x < _target.position.x)
+        {
+            transform.localScale = Vector3.one * 1.5f;
+            projectile.Initialize(transform.gameObject, false);
+        }
+        else if (transform.position.x > _target.position.x)
+        {
+            transform.localScale = ConstValue.FLIP_SCALE * 1.5f;
+            projectile.Initialize(transform.gameObject, true);
+        }
     }
 
     private void OnDrawGizmos()

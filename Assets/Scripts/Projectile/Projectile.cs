@@ -45,7 +45,9 @@ public class Projectile : MonoBehaviour
                 });
             }
 
+            ProjectileObjectPool.Instance.Push(this);
             transform.gameObject.SetActive(false);
+
             if(TrailTransform != null)
                 TrailTransform.gameObject.SetActive(false);
 

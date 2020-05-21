@@ -47,7 +47,7 @@ public class PsySkill3A: StateMachineBehaviour
             m_resetTime -= Time.deltaTime;
         }
 
-        m_attack.Skill03();
+        m_attack.RevolveAttack();
 
         m_targetPosition.x = animator.transform.position.x + m_direction;
         m_targetPosition.y = animator.transform.position.y;
